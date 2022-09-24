@@ -9,7 +9,9 @@ function calculateFinalDegree() {
         [getValue("module5Y2"),getValue("credit5Y2")],
         [getValue("module6Y2"),getValue("credit6Y2")],
         [getValue("module7Y2"),getValue("credit7Y2")],
-        [getValue("module8Y2"),getValue("credit8Y2")]
+        [getValue("module8Y2"),getValue("credit8Y2")],
+        [getValue("module9Y2"),getValue("credit9Y2")],
+        [getValue("module10Y2"),getValue("credit10Y2")]
     ];
 
     Y2.sort((a,b) => b[0] - a[0]);
@@ -22,7 +24,9 @@ function calculateFinalDegree() {
         [getValue("module5Y3"),getValue("credit5Y3")],
         [getValue("module6Y3"),getValue("credit6Y3")],
         [getValue("module7Y3"),getValue("credit7Y3")],
-        [getValue("module8Y3"),getValue("credit8Y3")]
+        [getValue("module8Y3"),getValue("credit8Y3")],
+        [getValue("module9Y3"),getValue("credit9Y3")],
+        [getValue("module10Y3"),getValue("credit10Y3")]
     ];
 
     Y3.sort((a,b) => b[0] - a[0]);
@@ -35,7 +39,9 @@ function calculateFinalDegree() {
         [getValue("module5Y4"),getValue("credit5Y4")],
         [getValue("module6Y4"),getValue("credit6Y4")],
         [getValue("module7Y4"),getValue("credit7Y4")],
-        [getValue("module8Y4"),getValue("credit8Y4")]
+        [getValue("module8Y4"),getValue("credit8Y4")],
+        [getValue("module9Y4"),getValue("credit9Y4")],
+        [getValue("module10Y4"),getValue("credit10Y4")]
     ];
 
     Y4.sort((a,b) => b[0] - a[0]);
