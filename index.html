@@ -1,237 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.Grade">
-
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" href="style.css" type="text/css">
-
-    <p hidden>Yan Yan Ji</p>
-
-    <title>Swansea Univerisity - Degree Calculator</title>
+<title>Yan Yan Ji</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="resources/script.js"></script>
+<link rel="stylesheet" href="resources/style.css" type="text/css">
 </head>
 <body>
-    <div id="container">
-        <h2>Swansea University Degree Classification Calculator (Unofficial)</h2>
-        <p> 
-            This is a personal project of a Computer Science student alumni from Swansea University. 
-            The website aim is to calculate predicted general Degree Classification of BSc, MSci Computer Science 
-            and other degrees if possible according to the information from a Swansea University website about 
-            calculating degree classification. The link of the website that the calculation is based on: 
-        </p>
-        <p>
-            <a href="https://myuni.swansea.ac.uk/academic-life/academic-regulations/undergraduate-award-regulations/ug-assessment-regs/ug-assessment-regs-section-3/" 
-            alt="MyUniHub - Swansea University - Degree Classification">
-            https://myuni.swansea.ac.uk/academic-life/academic-regulations/undergraduate-award-regulations/ug-assessment-regs/ug-assessment-regs-section-3/
-            </a>
-        </p>   
-        <p>
-            The calculator was tested on 3 Year Initial Degree with real grades from Computer Science student. 
-            The deviation was about 1% from actual grades given by the University as a final Degree Classification. 
-            However, I do not guarantee the deviation and accuracy of the calculator as the testing sample was limited.  
-        </p>
 
-        <h5><u>!!!DISCLAIMER: I do not guarantee the accuracy of the calculator!!!</u><h5>
+<div class="header">
+  <h1>Yan Yan Ji</h1>
+  <p>A page with everything what I do in my IT career and a little bit more.</p>
+</div>
 
-        <h3>How it exactly works</h3>
-        
-           <ol>
-            <li>Choose which type of course have you taken.</li>
-            <li>Input the data of your grades and respective credits for modules</li>
-            <li>S is a text field for a gap year grade</li>
-            <li>Click on button CALCULATE</li>
-            <li>See the result under the button</li>
-           </ol> 
+<div class="navbar">
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <!--<a href="#" class="right">Link</a>-->
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <!--<h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>-->
+    <p>
+        A software engineer who worked in FinTech and Higher Education. 
+        Significantly contributed by developing applications and solutions 
+        that have improved business and development workflow. Currently, pursuing 
+        further development in AI and Data Science.
+    </p>
+
+
+    <h3>Interests</h3>
+    <p>To be updated...</p>
+
+    <h3>Languages</h3>
+    I know a bit of Italian, Spanish, German, and I am learning to speak Japanese and Mandarin.
+    <ul>
+        <li>Slovak - Fluent</li>
+        <li>English - Fluent</li>
+    </ul>
+
+  </div>
+
+  <div class="main">
+    <div class="section">
+        <h2 id="projects">Projects</h2>
+
+        <h3><a href="https://yannki.github.io/swansea-degree-calculator/" target="_blank">Swansea Degree Classification Calculator</a></h3>
         <p>
-           You can put your grades up until now to calculate the current average grade. 
-           This calculator was to be as universal as possible in mind. 
-           <br>
-           <u>If you want to contact me directly and have a chit chat with me, you will need to find me on Discord :D.</u>
+            A Website for Swansea Undergraduate Students to Calculate their Degree Classification using simple HTML, CSS and JavaScript.
         </p>
     </div>
-    <div id="container">
-        <div id="selection">
-            <h4>Choose a course</h4>
+
+    <div class="section">
+        <h2 id="experience">Experience</h2>
+
+        <h3>System Analyst and Developer</h3>
+        <h5>Birkbeck, Jul 2023 - Jan 2025</h5>
+        <p>
             <ul>
-                <li><input type="radio" id="0" name="choice" checked>3 Initial Degree</li>
-                <li><input type="radio" id="1" name="choice">4 Initial Degree include a Year Abroad/In Industry</li>
-                <li><input type="radio" id="2" name="choice">4 Advanced Initial Degree</li>
-                <li><input type="radio" id="3" name="choice">5 Advanced Initial Degree include a Year Abroad/In Industry</li>
+                <li>Developing and maintained core systems using Oracle APEX, PL/SQL, HTML, CSS, JavaScript, and 
+                REST API improving development efficiency by 20% through in-house applications like a backup tool 
+                and a centralized change management form. </li>
+                <li> 2nd and 3rd-line support, troubleshooting issues, resolving data inconsistencies, and 
+                enhancing system functionality, while documenting processes for future use. </li>
+                <li>Assisting in automating business processes, optimizing user interfaces, and creating detailed 
+                documentation for systems supporting teaching, events, and corporate operations.</li>
             </ul>
-        </div>
-        <div id="calculator">
-            <h4>Calculator</h4>
-            <table>
-                <tr>
-                    <th>No.</th>
-                    <th>Year 2</th>
-                    <th>Year 3</th>
-                    <th>Year 4</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <input id="module1Y2" type="text" placeholder="Grade">
-                        <input id="credit1Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module1Y3" type="text" placeholder="Grade">
-                        <input id="credit1Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module1Y4" type="text" placeholder="Grade">
-                        <input id="credit1Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr> 
-                <tr>
-                    <td>2</td>
-                    <td>
-                        <input id="module2Y2" type="text" placeholder="Grade">
-                        <input id="credit2Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module2Y3" type="text" placeholder="Grade">
-                        <input id="credit2Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module2Y4" type="text" placeholder="Grade">
-                        <input id="credit2Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr> 
-                <tr>
-                    <td>3</td>
-                    <td>
-                        <input id="module3Y2" type="text" placeholder="Grade">
-                        <input id="credit3Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module3Y3" type="text" placeholder="Grade">
-                        <input id="credit3Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module3Y4" type="text" placeholder="Grade">
-                        <input id="credit3Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr> 
-                <tr>
-                    <td>4</td>
-                    <td>
-                        <input id="module4Y2" type="text" placeholder="Grade">
-                        <input id="credit4Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module4Y3" type="text" placeholder="Grade">
-                        <input id="credit4Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module4Y4" type="text" placeholder="Grade">
-                        <input id="credit4Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr> 
-                <tr>
-                    <td>5</td>
-                    <td>
-                        <input id="module5Y2" type="text" placeholder="Grade">
-                        <input id="credit5Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module5Y3" type="text" placeholder="Grade">
-                        <input id="credit5Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module5Y4" type="text" placeholder="Grade">
-                        <input id="credit5Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr> 
-                <tr>
-                    <td>6</td>
-                    <td>
-                        <input id="module6Y2" type="text" placeholder="Grade">
-                        <input id="credit6Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module6Y3" type="text" placeholder="Grade">
-                        <input id="credit6Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module6Y4" type="text" placeholder="Grade">
-                        <input id="credit6Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr> 
-                <tr>
-                    <td>7</td>
-                    <td>
-                        <input id="module7Y2" type="text" placeholder="Grade">
-                        <input id="credit7Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module7Y3" type="text" placeholder="Grade">
-                        <input id="credit7Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module7Y4" type="text" placeholder="Grade">
-                        <input id="credit7Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr> 
-                <tr>
-                    <td>8</td>
-                    <td>
-                        <input id="module8Y2" type="text" placeholder="Grade">
-                        <input id="credit8Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module8Y3" type="text" placeholder="Grade">
-                        <input id="credit8Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module8Y4" type="text" placeholder="Grade">
-                        <input id="credit8Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr>  
-                <tr>
-                    <td>9</td>
-                    <td>
-                        <input id="module9Y2" type="text" placeholder="Grade">
-                        <input id="credit9Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module9Y3" type="text" placeholder="Grade">
-                        <input id="credit9Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module9Y4" type="text" placeholder="Grade">
-                        <input id="credit9Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr> 
-                <tr>
-                    <td>10</td>
-                    <td>
-                        <input id="module10Y2" type="text" placeholder="Grade">
-                        <input id="credit10Y2" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module10Y3" type="text" placeholder="Grade">
-                        <input id="credit10Y3" type="text" placeholder="Credit">
-                    </td>
-                    <td>
-                        <input id="module10Y4" type="text" placeholder="Grade">
-                        <input id="credit10Y4" type="text" placeholder="Credit">
-                    </td>
-                </tr> 
-                <tr>
-                    <td>S</td>
-                    <td>
-                        <input id="gapGrade" type="text" placeholder="Grade">
-                    </td>
-                </tr>          
-            </table>
-            <button id="submit" onclick="calculateFinalDegree()">Calculate</button>
-            <!-- <input type="text" id="result" readonly> -->
-            <p id="result"></p>
-        </div>
-    </div>
+        </p>
+
+        <h3>Software Engineer</h3>
+        <h5>Wiley Edge (placed at NatWest Markets), May 2022 - Mar 2023</h5>
+        <p>
+            <ul>
+                <li>6 weeks Java Development training covering main 3 topics: Java (Spring, Maven), SQL and Financial Foundations. </li>
+                <li> I was working in a placement role with a backtesting team, where I was developing my skills in market data analysis and report creation. </li>
+                <li>In this role, I have also been responsible for cleaning and maintaining the codebase and database using SQL, JAVA, and Bash. </li>
+            </ul>
+        </p>
+
+        <h3>Teaching Assistant</h3>
+        <h5>Swansea University, Sep 2021 - Jun 2022</h5>
+        <p>
+            <ul>
+                <li> Provided support to students as they used software and worked to clarify subject material to promote their learning. </li>
+                <li> By answering their questions and assisting with students' understanding of the material, I was able to deepen my own knowledge of the university modules I was taking. </li>
+                <li> This role required strong communication skills and the ability to effectively explain complex concepts. </li>
+            </ul>
+        </p>
     
+        <h3>Intern</h3>
+        <h5>Redmill Solutions, Jul 2021 - Sep 2021</h5>
+        <p>
+            <ul>
+                <li>Created data sources under supervision and ensuring the data were in correct format through using the company's system.</li>
+                <li>Additionally, assisted in setting up phone line, sorting out server room, and developing HTML and VBA code.</li>
+            </ul>
+        </p> 
+
+    </div>
+  </div>
+  
+</div>
+
+<div class="footer">
+  <p>Template: W3School</p>
+</div>
 </body>
 </html>

@@ -1,2 +1,2 @@
-<h2>Swansea Degree Calculator</h2>
-This website has been made for the purpose of calming down undegraduate students in their final year at Swansea University.
+<h2>Portfolio</h2>
+<p>This is a page about myself and my portfolio that I have been most proud of</p>
