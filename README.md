@@ -1,2 +1,2 @@
 <h2>Portfolio</h2>
-<p>This is a page about myself and my portfolio that I have been most proud of</p>
+<p>The page is build using Vite + React. The page is a live proof of my experience, achievements and a bit about me while developing and utilising my skills in React.</p>
