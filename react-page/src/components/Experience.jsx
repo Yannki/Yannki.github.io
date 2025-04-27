@@ -1,3 +1,5 @@
+import React from "react";
+
 const JobExperience = ({ title, company, duration, responsibilities }) => {
     return (
       <div className="job-experience">
